@@ -295,7 +295,7 @@ namespace CommandAPI.Tests
             var result = controller.DeleteCommand(0);
 
             // Assert
-            Assert.IsType<NoContentResult>(result);
+            Assert.IsType<NotFoundResult>(result);
         }
     }
 }
